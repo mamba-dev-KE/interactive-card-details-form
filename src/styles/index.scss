@@ -1,0 +1,42 @@
+:root {
+  box-sizing: border-box;
+
+  font-size: 10px;
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Colors */
+  --clr-red: 0 100% 66%;
+  --clr-white: 0 0% 100%;
+  --clr-grayish-violet: 270 3% 87%;
+  --clr-dark-grayish-violet: 279 6% 55%;
+  --clr-dark-violet: 278 68% 11%;
+
+  --gap: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+
+  font-size: 1.8rem;
+}
+
+/* Utilities */
+
+.grid {
+  display: grid;
+  gap: var(--gap, 2rem);
+}
